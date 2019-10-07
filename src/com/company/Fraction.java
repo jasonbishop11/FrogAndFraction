@@ -49,7 +49,9 @@ public class Fraction {
         return result;
     }
 
-    // TODO toString()
+    public String toString(){
+        String s = "The Fraction is " + numerator + "/" + denominator;
+    }
 
 
     public static void main(String[] args) {
