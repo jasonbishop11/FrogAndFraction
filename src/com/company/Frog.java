@@ -77,7 +77,6 @@ public class Frog {
 
         Frog f2 = new Frog("Francine", -2,0);
         f2.eatFly();
-        // TODO uncomment these to test new code.
         f2.jump(2);
         f1.visit(f2);
         System.out.println(f1);
@@ -88,6 +87,7 @@ public class Frog {
         Frog f3 = new Frog("Frank", 1, 5);
         f3.jump(1);
         f3.jump(3);
+        System.out.println(f3);
         f3.visit(f1);
         System.out.println(f3);
     }
@@ -102,4 +102,7 @@ Francine
 Yum
 Hi I am Freddy the frog and I live at 0 2
 Hi I am Francine the frog and I live at 0 2
+Frank
+Hi I am Frank the frog and I live at 5 9
+Hi I am Frank the frog and I live at 0 2
 */
