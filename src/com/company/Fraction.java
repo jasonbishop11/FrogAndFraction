@@ -51,6 +51,7 @@ public class Fraction {
 
     public String toString(){
         String s = "The Fraction is " + numerator + "/" + denominator;
+        return s;
     }
 
 
@@ -61,17 +62,27 @@ public class Fraction {
         Fraction f3 = f1.add(f2);			// add 2 fractions
         System.out.println("3/4 + 4/5 = " + f3);	// print the answer
 
-		/*
+
 		Fraction f4 = f1.subtract(f2);
-		System.out.println(f1 + " - " + f2 + " = " + f4);
+		System.out.println("3/4 - 4/5 = " + f4);
 
-		Add code to call multiply f1 and f2 here
-
-		create 2 new fractions and add them here.
-
-		*/
-
-
+		//Add code to call multiply f1 and f2 here
+        Fraction f5 = f1.multiply(f2);
+        System.out.println("3/4 * 4/5 = " + f5);
+		//create 2 new fractions and add them here.
+        Fraction f6 = new Fraction();
+        Fraction f7 = new Fraction(7, 9);
+        Fraction f8 = f6.add(f7);
+        System.out.println("1/2 + 7/9 = " + f8);
     }
 
 }
+
+/* Output
+
+3/4 + 4/5 = The Fraction is 31/20
+3/4 - 4/5 = The Fraction is -1/20
+3/4 * 4/5 = The Fraction is 12/20
+1/2 + 7/9 = The Fraction is 23/18
+
+ */
